@@ -1,0 +1,153 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto:wght@100;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    --fontPoppins:'Poppins', sans-serif;
+    --font-Roboto:'Roboto', sans-serif;
+}
+body{
+    display: flex;
+    width: 100vw;
+    height: 100%;
+}
+main.content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: no-wrap;
+    align-items: center;
+    background-color: #1D539E;
+    width: 100%;
+    height: 50vh;
+    gap: 54px;
+}
+main h1.contentTitle{
+    font-family: var(--font-Roboto);
+    font-weight:bold;
+    color: white;
+    margin-top: 6%
+}
+main p.contentParagraph{
+    font-family: var(--font-Roboto);
+    color: white;
+
+}
+section.plans{
+    display: flex;
+    align-items: center;
+    width: 70vw;
+    height: 50vh;
+    gap: 2rem;
+    
+}
+div{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0px auto;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 35%;
+    padding: 25px;
+    height: 25em;
+    overflow: auto;
+}
+
+div span{
+    font-family: var(--font-Roboto);
+    font-size: 1rem;
+    padding-bottom: 20px;
+}
+
+div.basicPlan section.other{    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #FFCC29;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: 2px 2px rgba(27, 26, 26, 0.274);
+    width: 100%;
+    height: 4em;
+}
+div.basicPlan section.other span.typePlan{
+    color: #1D539E;
+    font-size: 1.3rem;
+    align-self: center;
+}
+div.basicPlan section.other span.popular{
+    background-color: #1D539E;
+    align-self: start;
+    color: white;
+    width: 45%;
+    height: 15%;
+    border-radius: 5rem;
+    text-align: center;
+    font-size: 0.8rem;
+}
+div.basicPlan h3.Price{
+    padding-top: 25%;
+}
+div h3.Price{
+    font-family: var(--font-Roboto);
+    font-size: 2rem;
+}
+div h3.Price span.oo{
+    font-weight: bold;
+    font-size: 1rem
+}
+div h3.Price span.mouth{
+    font-weight: 400;
+    margin-left: 10px ;
+}
+div h3.Price{
+    border-bottom: 1px solid black;
+    padding: 10px;
+
+}
+div p,i{
+    display: flex;
+    flex-direction: row;
+    align-items:  center;
+    margin-top: 5px; ;
+}
+div i{
+    color: green;
+    float: left;
+    width: 5%;
+    margin-right: 25px;
+}
+div p{
+    font-family: var(--font-Roboto);
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+div button{
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+    height: 10%;
+    margin-bottom: 15%;
+    background: none;
+    color: #1D539E;
+    border: 1px solid #1D539E;
+    border-radius: 5px;
+    font-family: var(--font-Roboto);
+}
+div button:hover{
+    background-color: #1D539E;
+    color: white;
+    font-weight: bolder;
+}
